@@ -5,8 +5,9 @@ class MoviesController < ApplicationController
     render json: movies
   end
 
-  def create
-    render json: Movie.create(movie_params), status: :accepted
+  def create(movie_params)
+    
+
   end
 
   private
